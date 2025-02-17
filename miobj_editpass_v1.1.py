@@ -34,14 +34,14 @@ st.title(".miobject: worldフォルダパス書換えツール")
 st.caption("バージョン: " + ver)
 
 # miobjectファイルのアップロード（.miobject拡張子のみ許可）
-miobject_file = st.file_uploader("1. miobjectファイルを選択してください。<br>Select the miobject file.", type=["miobject"])
+miobject_file = st.file_uploader("1. miobjectファイルを選択してください。<\br>Select the miobject file.", type=["miobject"])
 if miobject_file:
     st.success("ファイル選択済み: " + miobject_file.name)
 else:
     st.info("miobjectファイルを選択してください。")
 
 # worldフォルダパスの入力（ファイル選択に代わるテキスト入力）
-folder_path = st.text_input("2. worldフォルダパスを入力してください。<br>Please enter the world folder path. <br>ex.g:\minecraft_world\world01", "")
+folder_path = st.text_input("2. worldフォルダパスを入力してください。<\br>Please enter the world folder path. <\br>ex.g:\minecraft_world\world01", "")
 if folder_path:
     st.success("フォルダ選択済み: " + os.path.basename(os.path.normpath(folder_path)))
 else:
