@@ -60,7 +60,7 @@ if st.button("書換実行"):
             st.download_button(
                 label="変更後のファイルをダウンロード",
                 data=result_json,
-                file_name="modified.miobject",
+                file_name="modified_world.miobject",
                 mime="application/json"
             )
         except Exception as e:
