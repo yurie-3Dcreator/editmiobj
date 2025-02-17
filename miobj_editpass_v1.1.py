@@ -4,6 +4,12 @@ import os
 import datetime
 import random
 import string
+import streamlit as st
+
+st.set_page_config(
+                page_title="Mine-imator edit miobject",
+                page_icon="icon.ico"
+            )
 
 # バージョン情報
 ver = "v1.1 by yurie"
