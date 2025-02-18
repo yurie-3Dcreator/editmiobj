@@ -36,7 +36,7 @@ def override_world_dir(data, folder_path):
             resource["filename"] = "world_" + now.strftime('%Y%m%d%H%M%S.') + randomname(5)
     return data
 
-st.title(".miobject: worldフォルダパス書換えツール")
+st.title("Mine-imator専用【Sceneryデータのworldフォルダパス更新ツール】")
 st.caption("バージョン: " + ver)
 
 # miobjectファイルのアップロード（.miobject拡張子のみ許可）
