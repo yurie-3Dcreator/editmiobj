@@ -40,7 +40,7 @@ st.title("Mine-imator専用【Sceneryデータのworldフォルダパス更新�
 st.caption("バージョン: " + ver)
 
 # miobjectファイルのアップロード（.miobject拡張子のみ許可）
-miobject_file = st.file_uploader("1. miobjectファイルを選択してください。Select the miobject file.", type=["miobject"])
+miobject_file = st.file_uploader("1. miobjectファイルを選択してください。アドレス情報の前後に記号や空欄が含まれていないかご確認お願いします。Select the miobject file.", type=["miobject"])
 if miobject_file:
     st.success("ファイル選択済み: " + miobject_file.name)
 else:
