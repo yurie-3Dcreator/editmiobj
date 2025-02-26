@@ -41,14 +41,14 @@ st.caption("バージョン: " + ver)
 st.caption("ツールマニュアル: [こちら](https://uncovered-move-805.notion.site/Mine-imator-Scenery-world-19eae73ec4b1800ebcd4e99695e0f9d0?pvs=4)")
 
 # miobjectファイルのアップロード（.miobject拡張子のみ許可）
-miobject_file = st.file_uploader("1. miobjectファイルを選択してください。アドレス情報の前後に記号や空欄が含まれていないかご確認お願いします。Select the miobject file.", type=["miobject"])
+miobject_file = st.file_uploader("1. miobjectファイルを選択してください。Select the miobject file.", type=["miobject"])
 if miobject_file:
     st.success("ファイル選択済み: " + miobject_file.name)
 else:
     st.info("miobjectファイルを選択してください。")
 
 # worldフォルダパスの入力（ファイル選択に代わるテキスト入力）
-folder_path = st.text_input("2. worldフォルダパスを入力してください。Please enter the world folder path. ex.g:\minecraft_world\world", "")
+folder_path = st.text_input("2. worldフォルダパスを入力してください。アドレス情報の前後に記号や空欄が含まれていないかご確認お願いします。Please enter the world folder path. ex.g:\minecraft_world\world", "")
 if folder_path:
     st.success("フォルダ選択済み: " + os.path.basename(os.path.normpath(folder_path)))
 else:
