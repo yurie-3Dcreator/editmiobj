@@ -12,7 +12,7 @@ st.set_page_config(
             )
 
 # バージョン情報
-ver = "v1.1 created by yurie @ BUZZY HOUSE"
+ver = "v1.1 created by yurie"
 
 # ランダムな文字列を生成する関数
 def randomname(n):
