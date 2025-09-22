@@ -48,7 +48,7 @@ else:
     st.info("miobjectファイルを選択してください。")
 
 # worldフォルダパスの入力（ファイル選択に代わるテキスト入力）
-folder_path = st.text_input("2. worldフォルダパスを入力してください。アドレス情報の前後に記号や空欄が含まれていないかご確認お願いします。Please enter the world folder path. ex.g:\minecraft_world\world", "")
+folder_path = st.text_input("2. worldフォルダパスを入力してください。アドレス情報の前後に記号や空欄が含まれていないかご確認お願いします。ネザー,エンドのworldフォルダは「DIM1」「DIM-1」になります。Please enter the world folder path. ex.g:\minecraft_world\world", "")
 if folder_path:
     st.success("フォルダ選択済み: " + os.path.basename(os.path.normpath(folder_path)))
 else:
