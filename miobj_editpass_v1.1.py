@@ -38,7 +38,7 @@ def override_world_dir(data, folder_path):
 
 st.title("Mine-imator専用【Sceneryデータのworldフォルダパス更新ツール】")
 st.caption("バージョン: " + ver)
-st.caption("ツールマニュアル: [こちら](https://uncovered-move-805.notion.site/Mine-imator-Scenery-world-19eae73ec4b1800ebcd4e99695e0f9d0?pvs=4)")
+st.caption("ツールマニュアル: [こちら](https://yurie-craft.pro/?p=168)")
 
 # miobjectファイルのアップロード（.miobject拡張子のみ許可）
 miobject_file = st.file_uploader("1. miobjectファイルを選択してください。Select the miobject file.", type=["miobject"])
